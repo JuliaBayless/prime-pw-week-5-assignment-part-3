@@ -30,11 +30,11 @@ function showCollection(arrayP) {
 showCollection(collection);
 
 //this function does not work and I couldn't figure it out. It seems like I'm so close! maybe anyway... ha.
-function findByArtist(artistName = 'artist') { //set parameter to a string per instructions but seems to work without
+function findByArtist(artist) { //set parameter
   let artistFound = []; //create empty array
 for(album of collection){ //create the loop
   if(album === album.artist){ // set the condition for what I'm looking for in the loop. I think here is where its wrong.
-    artistFound.push(album.artist); // push findings into empty array - 
+    artistFound.push(album.artist); // push findings into empty array -
     return console.log(artistFound); //return array or No results
   } else {
     return 'No results'; //I continue to get a 'Depeche Mode' but only x1 along with undefined on the console.
