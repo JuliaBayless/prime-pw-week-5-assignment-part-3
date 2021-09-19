@@ -9,8 +9,13 @@ function addToCollection(title, artist, yearPublished) {
     yearPublished: yearPublished
   }
   collection.push(album);
-  return collection
+  return console.log('new album added', collection)
 }
 
 //checking to see if function addToCollection works.
-console.log('in addToCollection', addToCollection('Enjoy the Silence', 'Depeche Mode', '1990'));
+addToCollection('Violater', 'Depeche Mode', '1990');
+addToCollection('Amor Prohibido', 'Selena', '1994');
+addToCollection('All Eyez on Me', 'Tupac Shakur', '1996');
+addToCollection('Songs of Faith and Devotion', 'Depeche Mode', '1993');
+addToCollection('Energía', 'J Balvin', '2016');
+addToCollection('A Day at the Races', 'Queen', '1976')
