@@ -29,15 +29,17 @@ function showCollection(arrayP) {
 };
 showCollection(collection);
 
-function findByArtist(artist) {
-  let findArtist = [];
-  for(let i = 0; i < artists.length; i++){
-    if( i === artist){
-      console.log( artist[i].artist);
-    } else {
-      console.log('No results');
+//this function does not work and I couldn't figure it out. It seems like I'm so close! maybe anyway... ha.
+function findByArtist(artistName = 'artist') { //set parameter to a string per instructions but seems to work without
+  let artistFound = []; //create empty array
+for(album of collection){ //create the loop
+  if(album === album.artist){ // set the condition for what I'm looking for in the loop. I think here is where its wrong.
+    artistFound.push(album.artist); // push findings into empty array - 
+    return console.log(artistFound); //return array or No results
+  } else {
+    return 'No results'; //I continue to get a 'Depeche Mode' but only x1 along with undefined on the console.
     }
   }
 }
-
-console.log(findByArtist(collection));
+//also tried switching everything over to using a basic index loop and === to collection[i].artist. No success.
+console.log('In findByArtist function', findByArtist( 'Depeche Mode'));
